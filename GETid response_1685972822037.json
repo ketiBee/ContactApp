@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "firstname": "Josip",
+  "lastname": "Krolo",
+  "adress": "Split",
+  "numbers": [
+    {
+      "id": 3,
+      "contactNum": "0974561233",
+      "contactId": 3
+    },
+    {
+      "id": 4,
+      "contactNum": "0995821466",
+      "contactId": 3
+    }
+  ],
+  "emails": [
+    {
+      "id": 3,
+      "contactEmail": "josip@gmail.com",
+      "contactId": 3
+    },
+    {
+      "id": 4,
+      "contactEmail": "majstor1@gmail.com",
+      "contactId": 3
+    }
+  ]
+}

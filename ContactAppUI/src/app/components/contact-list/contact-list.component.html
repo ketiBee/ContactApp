@@ -1,0 +1,54 @@
+<div class="main-container">
+  <h1>CONTACTS</h1>
+<button class="btn btn-primary m-4" (click)="onClick()">Add New Contact</button>
+
+<div>
+  <form class="d-flex">
+    <input class="form-control me-2" placeholder="Search" aria-label="Search" name="searchValue" [(ngModel)]="searchValue">
+    <button class="btn btn-outline-success" type="submit" (click)="onSearch()">Search</button>
+  </form>
+
+  </div>
+
+<div class="containerSort">
+  <select class="form-select m-3" (change)="onSelect(option.value)" #option>
+    <option selected>Sort By</option>
+    <option value="Friend">Friend</option>
+    <option value="Family">Family</option>
+    <option value="Wife">Wife</option>
+    <option value="Husband">Husband</option>
+    <option value="Sister">Sister</option>
+    <option value="Brother">Brother</option>
+
+  </select>
+</div>
+
+ <div class="container" *ngIf="contacts && contacts.length > 0">
+  <div class="contacts" *ngFor="let contact of contacts">
+      <div class="contactContiner m-2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           {{contact.firstname}} {{contact.lastname}}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li class="fs-5" *ngFor="let num of contact.number">{{num.contactNum}}</li>
+          <li class="fs-5">{{contact.adress}}</li>
+          <li class="fs-5">{{contact.tag}}</li>
+
+          <li class="fs-5" *ngFor="let email of contact.email">{{email.contactEmail}}</li>
+        </ul>
+      </div>
+        <div class="buttons">
+          <div>
+            <button class="btn btn-primary m-1" (click)="onEdit(contact.id)">Edit</button>
+          </div>
+          <div>
+            <button class="btn btn-primary m-1" (click)="onDelete(contact.id)">Delete</button>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+
+

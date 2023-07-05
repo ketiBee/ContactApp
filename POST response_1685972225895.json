@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "firstname": "Katarina",
+    "lastname": "Bitunjac",
+    "adress": "Sinj",
+    "numbers": [
+      {
+        "id": 1,
+        "contactNum": "091478526",
+        "contactId": 1
+      }
+    ],
+    "emails": [
+      {
+        "id": 1,
+        "contactEmail": "sreca@gmail.com",
+        "contactId": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstname": "Maja",
+    "lastname": "Beslic",
+    "adress": "Sinj",
+    "numbers": [
+      {
+        "id": 2,
+        "contactNum": "0913369874",
+        "contactId": 2
+      }
+    ],
+    "emails": [
+      {
+        "id": 2,
+        "contactEmail": "maja@gmail.com",
+        "contactId": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstname": "Josip",
+    "lastname": "Krolo",
+    "adress": "Split",
+    "numbers": [
+      {
+        "id": 3,
+        "contactNum": "0974561233",
+        "contactId": 3
+      },
+      {
+        "id": 4,
+        "contactNum": "0995821466",
+        "contactId": 3
+      }
+    ],
+    "emails": [
+      {
+        "id": 3,
+        "contactEmail": "josip@gmail.com",
+        "contactId": 3
+      },
+      {
+        "id": 4,
+        "contactEmail": "majstor1@gmail.com",
+        "contactId": 3
+      }
+    ]
+  }
+]

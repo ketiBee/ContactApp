@@ -1,0 +1,31 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.d-flex{
+  width: 400px;
+}
+
+.containerSort{
+  width:100px;
+}
+
+.container{
+ outline: 2px;
+
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.contactContiner{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
